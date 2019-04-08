@@ -1,0 +1,68 @@
+---
+title: "Tooth Morphology"
+author: "Corinthia Black"
+date: "5/8/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Programs | Set Directory
+```{r}
+#install.packages("phytools")
+library(phytools)
+
+#install.packages("devtools")
+#library(devtools)
+
+#install_github("vqv/ggbiplot")
+library(ggbiplot)
+
+#install.packages("ape")
+library(ape)
+```
+
+```{r}
+Teeth=read.delim("ToothMeasurements.txt", sep="\t", header = TRUE, row.names = 1)
+species=row.names(Teeth)
+```
+
+##PCA: https://tgmstat.wordpress.com/2013/11/28/computing-and-visualizing-pca-in-r/
+```{r}
+tooth.pca=prcomp(Teeth, center = TRUE, scale. = TRUE)
+tooth.pca$names=row.names(Teeth)
+summary(tooth.pca)
+
+pca=tooth.pca$x
+pca.1.2=pca[,c(1,2)]
+pca.2.3=pca[,c(2,3)]
+
+## PC1 x PC2
+g=ggbiplot(tooth.pca, obs.scale = 1, var.scale = 1, 
+          #ellipse = TRUE, 
+           circle = TRUE) + geom_text(aes(label=tooth.pca$names),hjust=0, vjust=0, size=1.5)
+g=g+ylim(-4,4)
+g=g+xlim(-4,8)
+g=g+theme_classic()
+print(g)
+```
+
+## Phylogeny
+```{r}
+tree=read.tree("Tree.tre")
+```
+
+## Phylomorphospace: https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/j.2041-210X.2011.00169.x
+```{r}
+## PC1 x PC2
+phylosig(trimmed.tree, pca.1.2, method="K")
+phylomorphospace(tree, pca.1.2, label = c("horizontal"), node.size=c(.5,1))
+phylomorphospace(tree, pca.1.2, label = c("off"), node.size=c(.5,1))
+
+### Save Morphospace
+#tiff(filename = "PhylomorphoPC1-2.tiff", width = 200, height = 170, units = "mm", res = 300, pointsize = 8)
+phylomorphospace(trimmed.tree, pca.1.2, label = c("off"), node.size=c(.5,1))
+#dev.off()
+```
