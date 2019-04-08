@@ -1,0 +1,24 @@
+Species	Major Cusp Length	Minor Cusp Length	Major Cusp Width	Minor Cusp Width	Cusp Width	Stalk Length	Stalk Width
+Pterygoplichthyes_multiradiatus	0.265	0.13	0.075	0.065	0.124	0.457	0.092
+Dekeyseria_pulchra	0.108	0.074	0.051	0.026	0.075	0.3	0.068
+Pseudolithoxus_dumus	0.314	0.227	0.072	0.055	0.121	1.273	0.098
+Hopliancistrus_tricornis	0.228	0.13	0.033	0.041	0.072	0.531	0.062
+Micracanthicus_vandragti	0.209	0.17	0.081	0.067	0.119	0.413	0.084
+Baryancistrus_beggini	0.274	0.226	0.093	0.031	0.12	0.563	0.131
+Guyanancistrus_niger	0.352	0.439	0.093	0.063	0.144	0.987	0.165
+Hemiancistrus_aspidolepis	0.256	0.191	0.178	0.132	0.276	0.826	0.251
+Hemiancistrus_guahiborum	0.499	0.304	0.087	0.063	0.159	1.215	0.147
+Hemiancistrus_subviridis	0.725	0.624	0.146	0.166	0.286	1.501	0.26
+Hemiancistrus_fuliginosus	0.571	0.195	0.121	0.096	0.166	0.659	0.138
+Hemiancistrus_medians	0.382	0.229	0.116	0.077	0.177	1.089	0.237
+Hypancistrus_contradens	0.279	0.258	0.054	0.049	0.089	0.601	0.11
+Hypostomus_robinii	0.308	0.142	0.076	0.068	0.1	0.568	0.101
+Cochliodon_macushi	0.573	0.111	0.934	0.024	0.505	1.006	0.419
+Cochliodon_taphorni	0.211	0.048	0.348	0.01	0.165	0.601	0.187
+Cochliodon_plecostomoides	0.746	0.000001	0.787	0.000001	0.524	0.93	0.387
+Lasiancistrus_schomburgkii_Maranon	0.096	0.055	0.035	0.022	0.047	0.548	0.056
+Panaque_nigrolineatus_Apure	1.161	0.000001	1.224	0.000001	1.14	1.228	0.56
+Peckoltia_otali	0.376	0.254	0.081	0.046	0.097	0.726	0.076
+Pseudancistrus_barbatus	0.554	0.412	0.087	0.09	0.178	1.396	0.202
+Pseudancistrus_sidereus	0.208	0.193	0.048	0.064	0.101	1.703	0.114
+Pseudancistrus_brevispinnis	0.259	0.232	0.068	0.054	0.105	0.433	0.117
