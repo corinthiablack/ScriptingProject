@@ -1,7 +1,6 @@
 ---
 title: "Tooth Morphology"
 author: "Corinthia Black"
-date: "5/8/2018"
 output: html_document
 ---
 
