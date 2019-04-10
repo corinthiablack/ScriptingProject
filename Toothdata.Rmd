@@ -25,9 +25,9 @@ library(ape)
 ```
 
 ```{r}
+# create "Teeth" data frame object with morphological data from "ToothMeasurements.txt"
 Teeth=read.delim("ToothMeasurements.txt", sep="\t", header = TRUE, row.names = 1)
-species=row.names(Teeth)
-```
+``
 
 ##PCA: https://tgmstat.wordpress.com/2013/11/28/computing-and-visualizing-pca-in-r/
 ```{r}
@@ -39,7 +39,7 @@ pca=tooth.pca$x
 pca.1.2=pca[,c(1,2)]
 pca.2.3=pca[,c(2,3)]
 
-## PC1 x PC2
+## create plot of PC1 x PC2 using ggplot
 g=ggbiplot(tooth.pca, obs.scale = 1, var.scale = 1, 
           #ellipse = TRUE, 
            circle = TRUE) + geom_text(aes(label=tooth.pca$names),hjust=0, vjust=0, size=1.5)
@@ -49,7 +49,7 @@ g=g+theme_classic()
 print(g)
 ```
 
-## Phylogeny
+## importing phylogenetic tree (must be newick or nexus file format)
 ```{r}
 tree=read.tree("Tree.tre")
 ```
