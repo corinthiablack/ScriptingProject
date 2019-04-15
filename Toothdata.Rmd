@@ -10,45 +10,47 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Load Programs | Set Directory
 ```{r}
+# phylomorphospace
 #install.packages("phytools")
 library(phytools)
 
-#install.packages("devtools")
-#library(devtools)
-
+# PCA visualization
 #install_github("vqv/ggbiplot")
 library(ggbiplot)
 
+# phylogeny
 #install.packages("ape")
 library(ape)
 ```
 
+## Load required data
 ```{r}
-# create "Teeth" data frame object with morphological data from "ToothMeasurements.txt"
+# create data frame with morphological data from "ToothMeasurements.txt"
 Teeth=read.delim("ToothMeasurements.txt", sep="\t", header = TRUE, row.names = 1)
-``
+```
 
-##PCA: https://tgmstat.wordpress.com/2013/11/28/computing-and-visualizing-pca-in-r/
+## Principal Components Analysis (PCA): https://tgmstat.wordpress.com/2013/11/28/computing-and-visualizing-pca-in-r/
 ```{r}
+# Run PCA
 tooth.pca=prcomp(Teeth, center = TRUE, scale. = TRUE)
+# Add species names to PCA data
 tooth.pca$names=row.names(Teeth)
 summary(tooth.pca)
 
+# Save PCA output to be used in phylomorphospace
+# tooth.pca$x = All PC axes; use pca[,c(1,2)] to isolate the 1st and 2nd PC axes (can change numbers to be any other PC axes)
 pca=tooth.pca$x
 pca.1.2=pca[,c(1,2)]
-pca.2.3=pca[,c(2,3)]
 
-## create plot of PC1 x PC2 using ggplot
-g=ggbiplot(tooth.pca, obs.scale = 1, var.scale = 1, 
-          #ellipse = TRUE, 
-           circle = TRUE) + geom_text(aes(label=tooth.pca$names),hjust=0, vjust=0, size=1.5)
+# Create plot of PC1 and PC2 in ggbiplot
+g=ggbiplot(tooth.pca, obs.scale = 1, var.scale = 1, circle = TRUE) + geom_text(aes(label=tooth.pca$names),hjust=0, vjust=0, size=1.5)
 g=g+ylim(-4,4)
 g=g+xlim(-4,8)
 g=g+theme_classic()
 print(g)
 ```
 
-## importing phylogenetic tree (must be newick or nexus file format)
+## Import phylogenetic tree (must be newick or nexus file format)
 ```{r}
 tree=read.tree("Tree.tre")
 ```
