@@ -1,0 +1,67 @@
+#NEXUS
+[ID: 3904460400]
+begin taxa;
+	dimensions ntax=24;
+	taxlabels
+		KR491678_1_Pterygoplichthys_multiradiatus
+		KP960166_1_Dekeyseria_pulchra
+		MG800736_1_Pseudolithoxus_dumus
+		KP960105_1_Hopliancistrus_tricornis
+		KP960141_1_Micracanthicus_vandragti
+		KP960183_1_Baryancistrus_beggini
+		KP960089_1_Pseudancistrus_niger
+		DQ133755_1_Hemiancistrus_aspidolepis
+		KP960181_1_Hemiancistrus_guahiborum
+		KP960184_1_Hemiancistrus_subviridis
+		KP960121_1_Hemiancistrus_fuliginosus
+		KP960169_1_Hemiancistrus_medians
+		KP960142_1_Hypancistrus_contradens
+		KP960115_1_Pseudancistrus_orinoco
+		KP960208_1_Pseudancistrus_nigrescens
+		KP960201_1_Pseudancistrus_sidereus
+		KP960204_1_Pseudancistrus_barbatus
+		KP960155_1_Peckoltia_braueri
+		KP960092_1_Lasiancistrus_tentaculatus
+		DQ119418_1_Cochliodon_plecostomoides
+		KP960126_1_Hypostomus_taphorni
+		KP960128_1_Hypostomus_macushi
+		DQ133770_1_Hypostomus_robinii
+		KY858079_1_Vandellia_sp_1
+		;
+end;
+begin trees;
+	translate
+		1	KR491678_1_Pterygoplichthys_multiradiatus,
+		2	KP960166_1_Dekeyseria_pulchra,
+		3	MG800736_1_Pseudolithoxus_dumus,
+		4	KP960105_1_Hopliancistrus_tricornis,
+		5	KP960141_1_Micracanthicus_vandragti,
+		6	KP960183_1_Baryancistrus_beggini,
+		7	KP960089_1_Pseudancistrus_niger,
+		8	DQ133755_1_Hemiancistrus_aspidolepis,
+		9	KP960181_1_Hemiancistrus_guahiborum,
+		10	KP960184_1_Hemiancistrus_subviridis,
+		11	KP960121_1_Hemiancistrus_fuliginosus,
+		12	KP960169_1_Hemiancistrus_medians,
+		13	KP960142_1_Hypancistrus_contradens,
+		14	KP960115_1_Pseudancistrus_orinoco,
+		15	KP960208_1_Pseudancistrus_nigrescens,
+		16	KP960201_1_Pseudancistrus_sidereus,
+		17	KP960204_1_Pseudancistrus_barbatus,
+		18	KP960155_1_Peckoltia_braueri,
+		19	KP960092_1_Lasiancistrus_tentaculatus,
+		20	DQ119418_1_Cochliodon_plecostomoides,
+		21	KP960126_1_Hypostomus_taphorni,
+		22	KP960128_1_Hypostomus_macushi,
+		23	DQ133770_1_Hypostomus_robinii,
+		24	KY858079_1_Vandellia_sp_1
+		;
+   [Note: This tree contains information on the topology, 
+          branch lengths (if present), and the probability
+          of the partition indicated by the branch.]
+   tree con_50_majrule = (1:1.812395e-01,(20:2.276376e-02,(21:2.969027e-02,(22:3.225093e-02,23:4.034129e-02)0.679:8.020960e-03)0.549:7.751606e-03)0.685:3.585274e-02,((((((((2:5.997984e-02,24:1.137595e+00)0.896:8.805201e-02,4:2.009346e-01)0.850:3.650796e-02,(3:1.832147e-01,19:2.016971e-01)0.983:5.605825e-02)0.664:1.694095e-02,(7:2.298687e-01,16:1.656472e-01)0.751:3.174666e-02,14:1.625311e-01)0.678:1.881858e-02,(15:1.511933e-01,17:1.237746e-01)1.000:5.037040e-02)0.956:5.292571e-02,(((6:8.010504e-03,10:6.449988e-03)1.000:8.555923e-02,9:9.109190e-02)0.893:1.908865e-02,12:1.028180e-01)0.532:8.884457e-03)0.966:5.525516e-02,((5:7.594024e-03,13:5.168702e-03)1.000:7.436954e-02,18:8.958818e-02)0.999:6.433557e-02)0.968:5.400543e-02,8:5.809158e-02,11:6.014715e-02)0.544:2.629182e-02);
+
+   [Note: This tree contains information only on the topology
+          and branch lengths (median of the posterior probability density).]
+   tree con_50_majrule = (1:1.812395e-01,(20:2.276376e-02,(21:2.969027e-02,(22:3.225093e-02,23:4.034129e-02):8.020960e-03):7.751606e-03):3.585274e-02,((((((((2:5.997984e-02,24:1.137595e+00):8.805201e-02,4:2.009346e-01):3.650796e-02,(3:1.832147e-01,19:2.016971e-01):5.605825e-02):1.694095e-02,(7:2.298687e-01,16:1.656472e-01):3.174666e-02,14:1.625311e-01):1.881858e-02,(15:1.511933e-01,17:1.237746e-01):5.037040e-02):5.292571e-02,(((6:8.010504e-03,10:6.449988e-03):8.555923e-02,9:9.109190e-02):1.908865e-02,12:1.028180e-01):8.884457e-03):5.525516e-02,((5:7.594024e-03,13:5.168702e-03):7.436954e-02,18:8.958818e-02):6.433557e-02):5.400543e-02,8:5.809158e-02,11:6.014715e-02):2.629182e-02);
+end;
