@@ -52,15 +52,17 @@ print(g)
 
 ## Import phylogenetic tree (must be newick or nexus file format)
 ```{r}
-tree=read.tree("Tree.tre")
+tree=read.nexus("catfishes_practice.con.tre-2.txt")
+tree=tree$con_50_majrule
+species=row.names(Teeth)
+trimmed.tree=drop.tip(tree,tree$tip.label[-match(species, tree$tip.label)])
 ```
 
 ## Phylomorphospace: https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/j.2041-210X.2011.00169.x
 ```{r}
 ## PC1 x PC2
 phylosig(trimmed.tree, pca.1.2, method="K")
-phylomorphospace(tree, pca.1.2, label = c("horizontal"), node.size=c(.5,1))
-phylomorphospace(tree, pca.1.2, label = c("off"), node.size=c(.5,1))
+phylomorphospace(trimmed.tree, pca.1.2, label = c("horizontal"), node.size=c(.5,1))
 
 ### Save Morphospace
 #tiff(filename = "PhylomorphoPC1-2.tiff", width = 200, height = 170, units = "mm", res = 300, pointsize = 8)
