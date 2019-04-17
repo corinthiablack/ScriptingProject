@@ -53,7 +53,7 @@ print(g)
 ## Import phylogenetic tree (must be newick or nexus file format)
 ```{r}
 # Read nexus phylogeny
-tree=read.nexus("catfishes_practice.con.tre-2.txt")
+tree=read.nexus("catfishes_tree.txt")
 # Save one copy of the tree as a phylo type
 tree=tree$con_50_majrule
 # Create list of species names to trim the tree
