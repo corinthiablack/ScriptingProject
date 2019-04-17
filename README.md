@@ -2,6 +2,19 @@
 Charlotte Benedict, Corinthia Black, Miles Horne, Matt Welc, Courtney Weyand
 
 ## Phylogenetics
+
+## MAFFT Alignment
+
+#!/bin/bash
+
+#loading in the mafft module here
+
+module load mafft/7.305
+  
+#this aligns the files using maffts automatic settings and places the output in a new fasta file
+
+mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
+
 ---
 ## Shape Analyses
 
@@ -10,3 +23,6 @@ Charlotte Benedict, Corinthia Black, Miles Horne, Matt Welc, Courtney Weyand
 -	devtools
 -	vqv/ggbiplot
 -	ape
+
+
+
