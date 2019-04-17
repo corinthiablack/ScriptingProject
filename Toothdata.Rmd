@@ -57,13 +57,14 @@ tree=read.tree("Tree.tre")
 
 ## Phylomorphospace: https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/j.2041-210X.2011.00169.x
 ```{r}
-## PC1 x PC2
+# gives phylogenetic signal value "K" 
+# a K value >= 1 suggests that species display similar trait values to to close phylogenetic proximity
 phylosig(trimmed.tree, pca.1.2, method="K")
 phylomorphospace(tree, pca.1.2, label = c("horizontal"), node.size=c(.5,1))
 phylomorphospace(tree, pca.1.2, label = c("off"), node.size=c(.5,1))
 
-### Save Morphospace
+### Save Morphospace as a .tiff file in working directory
 #tiff(filename = "PhylomorphoPC1-2.tiff", width = 200, height = 170, units = "mm", res = 300, pointsize = 8)
-phylomorphospace(trimmed.tree, pca.1.2, label = c("off"), node.size=c(.5,1))
+#phylomorphospace(trimmed.tree, pca.1.2, label = c("off"), node.size=c(.5,1))
 #dev.off()
 ```
