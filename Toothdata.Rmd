@@ -52,19 +52,25 @@ print(g)
 
 ## Import phylogenetic tree (must be newick or nexus file format)
 ```{r}
-tree=read.tree("Tree.tre")
+# Read nexus phylogeny
+tree=read.nexus("catfishes_tree.txt")
+# Save one copy of the tree as a phylo type
+tree=tree$con_50_majrule
+# Create list of species names to trim the tree
+species=row.names(Teeth)
+# Trim the tree to match the list of species and tip labels
+trimmed.tree=drop.tip(tree,tree$tip.label[-match(species, tree$tip.label)])
 ```
 
 ## Phylomorphospace: https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/j.2041-210X.2011.00169.x
 ```{r}
-# gives phylogenetic signal value "K" 
-# a K value >= 1 suggests that species display similar trait values to to close phylogenetic proximity
+# Find the phylosignal: K>1 = convergence of morphology, K<1 = morphology changes with phylogeny (divergence)
 phylosig(trimmed.tree, pca.1.2, method="K")
-phylomorphospace(tree, pca.1.2, label = c("horizontal"), node.size=c(.5,1))
-phylomorphospace(tree, pca.1.2, label = c("off"), node.size=c(.5,1))
+# Generate phylomorphospace from trimmed tree and pca coords 
+phylomorphospace(trimmed.tree, pca.1.2, label = c("horizontal"), node.size=c(.5,1), xlim=c(-14,10))
 
-### Save Morphospace as a .tiff file in working directory
-#tiff(filename = "PhylomorphoPC1-2.tiff", width = 200, height = 170, units = "mm", res = 300, pointsize = 8)
-#phylomorphospace(trimmed.tree, pca.1.2, label = c("off"), node.size=c(.5,1))
-#dev.off()
+### Save Phylomorphospace to working directory as a tiff file
+tiff(filename = "PhylomorphoPC1-2.tiff", width = 200, height = 170, units = "mm", res = 300, pointsize = 8)
+phylomorphospace(trimmed.tree, pca.1.2, label = c("off"), node.size=c(.5,1))
+dev.off()
 ```
