@@ -25,6 +25,9 @@ mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
 -	vqv/ggbiplot
 -	ape
 
-
+All of the R code required for the shape analyses is in the file 
+"Toothdata.Rmd".
+This file is formatted for optimization in R studio, but it should run fine 
+in "standard R".
 
 
