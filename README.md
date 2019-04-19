@@ -20,14 +20,16 @@ mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
 ## Shape Analyses
 
 *Note* -- if you do not have the following R packages installed, un-comment the installation lines
--	phytools
--	devtools
--	vqv/ggbiplot
--	ape
+-	phytools (https://cran.r-project.org/web/packages/phytools/index.html)
+-	devtools (https://cran.r-project.org/web/packages/devtools/index.html)
+-	vqv/ggbiplot (https://cran.r-project.org/web/packages/ggplot2/index.html)
+-	ape (https://cran.r-project.org/web/packages/ape/index.html) 
 
 All of the R code required for the shape analyses is in the file 
 "Toothdata.Rmd".
 This file is formatted for optimization in R studio, but it should run fine 
-in "standard R".
+in "standard R". 
+*what an r markdown file is
 
+*put in chunks of code and explain them
 
