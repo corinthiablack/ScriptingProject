@@ -1,5 +1,6 @@
-# ScriptingProject
-Charlotte Benedict, Corinthia Black, Miles Horne, Matt Welc, Courtney Weyand
+# ScriptingProject: Phylomorphospace
+Authors: Charlotte Benedict, Corinthia Black, Miles Horne, Matt Welc, Courtney Weyand
+Auburn University; BIOL 7180 "Scripting for Biologists"
 
 ## Phylogenetics
 
@@ -23,6 +24,7 @@ mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
 -	devtools
 -	vqv/ggbiplot
 -	ape
+
 
 
 
