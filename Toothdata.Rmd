@@ -4,6 +4,7 @@ author: "Corinthia Black"
 output: html_document
 ---
 
+# these lines are necessary for running the file in R markdown
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
