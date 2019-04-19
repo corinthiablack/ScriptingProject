@@ -19,10 +19,14 @@ mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
 ---
 ## Shape Analyses
 
-*Note* -- if you do not have the following R packages installed, un-comment the installation lines
+*Note* -- if you do not have the listed R packages installed, un-comment the installation lines in 
+Toothdata.Rmd
+We will conduct shape analyses using the R statistical software package. The following packages are required 
+(follow links for detailed documentation)
 -	phytools (https://cran.r-project.org/web/packages/phytools/index.html)
 -	devtools (https://cran.r-project.org/web/packages/devtools/index.html)
--	vqv/ggbiplot (https://cran.r-project.org/web/packages/ggplot2/index.html)
+-	vqv/ggbiplot (https://github.com/vqv/ggbiplot) ***This package must be downloaded from github.com, 
+as it is not on the official R site.
 -	ape (https://cran.r-project.org/web/packages/ape/index.html) 
 
 All of the R code required for the shape analyses is in the file 
