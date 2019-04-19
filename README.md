@@ -36,5 +36,22 @@ This file is formatted for optimization in R studio, but it should run fine
 in "standard R". 
 *what an r markdown file is
 
-*put in chunks of code and explain them
+*put in chunks of code and explain them*
+Format `code` inline with backticks
 
+Blocks of code can be done by indenting:
+
+    print("Hello Word")
+
+Or by surrounding the line with triple backticks:
+
+```
+print("Hello World")
+```
+
+```python
+# Note that markdown *syntax* is **ignored** in here
+for i in range(10):
+    s = "Hello World " + str(i)
+    print(s)
+```
