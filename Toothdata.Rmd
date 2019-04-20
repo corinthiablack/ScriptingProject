@@ -68,9 +68,9 @@ trimmed.tree=drop.tip(tree,tree$tip.label[-match(species, tree$tip.label)])
 ## Phylomorphospace: https://besjournals.onlinelibrary.wiley.com/doi/epdf/10.1111/j.2041-210X.2011.00169.x
 ```{r}
 # Find the phylosignal: K>1 = convergence of morphology, K<1 = morphology changes with phylogeny (divergence)
-phylosig(trimmed.tree, pca.1.2, method="K")
+phylosig(trimmed.tree, pca.1.2, method="K", test = TRUE)
 # Generate phylomorphospace from trimmed tree and pca coords 
-phylomorphospace(trimmed.tree, pca.1.2, label = c("horizontal"), node.size=c(.5,1), xlim=c(-14,10))
+phylomorphospace(trimmed.tree, pca.1.2, label = c("horizontal"), node.size=c(.5,1), xlim=c(-13,8))
 
 ### Save Phylomorphospace to working directory as a tiff file
 tiff(filename = "PhylomorphoPC1-2.tiff", width = 200, height = 170, units = "mm", res = 300, pointsize = 8)
