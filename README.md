@@ -6,15 +6,15 @@ Auburn University; BIOL 7180 "Scripting for Biologists"
 
 ### MAFFT Alignment
 
-#!/bin/bash
+```#!/bin/bash```
 
-#loading in the mafft module here
+Loading in the mafft module here
 
-module load mafft/7.305
+```module load mafft/7.305```
   
-#this aligns the files using maffts automatic settings and places the output in a new fasta file
+This aligns the files using maffts automatic settings and places the output in a new fasta file
 
-mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
+```mafft --auto unedited_sequences.fasta > aligned_sequences.fasta```
 
 ---
 ## Shape Analyses
