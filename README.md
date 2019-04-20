@@ -1,5 +1,6 @@
 # ScriptingProject: Phylomorphospace
 Authors: Charlotte Benedict, Corinthia Black, Miles Horne, Matt Welc, Courtney Weyand
+
 Auburn University; BIOL 7180 "Scripting for Biologists"
 
 ## Phylogenetics
@@ -8,13 +9,31 @@ Auburn University; BIOL 7180 "Scripting for Biologists"
 
 ```#!/bin/bash```
 
-Loading in the mafft module here
+Load the MAFFT module here
 
 ```module load mafft/7.305```
   
-This aligns the files using maffts automatic settings and places the output in a new fasta file
+This will align the files using MAFFT automatic settings and creates an output fasta file
 
 ```mafft --auto unedited_sequences.fasta > aligned_sequences.fasta```
+
+### MrBayes
+
+```#!/bin/sh```
+
+This creates new directory and changes to it 
+
+```mkdir mb_output```
+```cd mb_output```
+
+Load the MrBayes environment here
+
+```source /opt/asn/etc/asn-bash-profiles-special/modules.sh```
+```module load mrbayes```
+
+Run my job
+
+```mb ../catfishes_practice.nex >log.txt```
 
 ---
 ## Shape Analyses
