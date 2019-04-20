@@ -57,6 +57,8 @@ print(g)
 tree=read.nexus("catfishes_tree.txt")
 # Save one copy of the tree as a phylo type
 tree=tree$con_50_majrule
+# Root tree to outgroup
+tree=root(tree, "KY858079_1_Vandellia_sp_1", resolve.root = TRUE)
 # Create list of species names to trim the tree
 species=row.names(Teeth)
 # Trim the tree to match the list of species and tip labels
