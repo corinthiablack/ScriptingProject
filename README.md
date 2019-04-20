@@ -4,7 +4,7 @@ Auburn University; BIOL 7180 "Scripting for Biologists"
 
 ## Phylogenetics
 
-## MAFFT Alignment
+### MAFFT Alignment
 
 #!/bin/bash
 
