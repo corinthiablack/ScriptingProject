@@ -45,7 +45,7 @@ Run my job
 
 We will conduct shape analyses using the R statistical software package. The following packages are required 
 (follow links for detailed documentation)
--       [phytools](https://cran.r-project.org/web/packages/phytools/index.html)
+-	[phytools](https://cran.r-project.org/web/packages/phytools/index.html)
 -	[devtools](https://cran.r-project.org/web/packages/devtools/index.html)
 -	[vqv/ggbiplot](https://github.com/vqv/ggbiplot) ***This package must be downloaded from github.com, 
 as it is not on the official R site.
