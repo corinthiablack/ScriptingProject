@@ -101,3 +101,5 @@ phylosig(trimmed.tree, pca.1.2, method="K", test = TRUE)
 phylomorphospace(trimmed.tree, pca.1.2, label = c("horizontal"), node.size=c(.5,1), xlim=c(-13,8))
 
 ```
+
+![Phyplomorphospace](https://github.com/corinthiablack/ScriptingProject/blob/master/pictures/phylomorphospace.jpg "It should look a little something like this.")
