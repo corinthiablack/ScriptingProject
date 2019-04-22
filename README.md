@@ -14,31 +14,44 @@ We will conduct phylogenetic analyses using MrBayes through the ASC. The followi
 
 First load the MAFFT v7.305 module: 
 
-```#!/bin/bash```
-```module load mafft/7.305```
+```bash
+#!/bin/bash
+module load mafft/7.305
+```
 
 Align the files using the MAFFT automatic settings
+
 Create output fasta file
 
-```mafft --auto unedited_sequences.fasta > aligned_sequences.fasta```
+```bash
+mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
+```
 
 ### MrBayes
 
-```#!/bin/sh```
+```bash
+#!/bin/sh
+```
 
 This creates new directory and changes to it 
 
-```mkdir mb_output```
-```cd mb_output```
+```bash
+mkdir mb_output
+cd mb_output
+```
 
 Load the MrBayes environment here
 
-```source /opt/asn/etc/asn-bash-profiles-special/modules.sh```
-```module load mrbayes```
+```bash
+source /opt/asn/etc/asn-bash-profiles-special/modules.sh
+module load mrbayes
+```
 
 Run my job
 
-```mb ../catfishes_practice.nex >log.txt```
+```bash
+mb ../catfishes_practice.nex >log.txt
+```
 
 ---
 ## Shape Analyses
