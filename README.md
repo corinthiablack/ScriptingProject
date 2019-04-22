@@ -33,9 +33,10 @@ chmod +x mafft.sh
 ```
 ### PartitionFinder
 Free open source software to select best-fit partitioning schemes and models of molecular evolution for phylogenetic analysis.
+Additional information can be found on the link provided above.
 
 ***You are not require to run this package. Best-fit partitioning schemes and models have been added to .nex file for MrBayes. 
-Additional information can be found on the link provided above. 
+ 
 ### MrBayes
 
 Create new directory for MrBayes
