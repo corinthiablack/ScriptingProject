@@ -48,7 +48,7 @@ Use nexus file
 Run my job
 
 ```bash
-mb ../catfishes_practice.nex >log.txt
+mb ../catfishes_tree.nex >log.txt
 ```
 
 ---
