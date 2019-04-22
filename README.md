@@ -15,6 +15,7 @@ We will conduct phylogenetic analyses using MrBayes through the ASC. The followi
 First load the MAFFT v7.305 module: 
 
 ```bash
+#!/bin/bash
 module load mafft/7.305
 ```
 
