@@ -56,12 +56,12 @@ in "standard R".
 *what an r markdown file is
 
 Create data frame from morphological data:
-```
+```r
 Teeth=read.delim("ToothMeasurements.txt", sep="\t", header = TRUE, row.names = 1)
 ```
 
 Run your PCA (Principal Component Analysis) of the morphological data and save it to be used in the next steps:
-```
+```r
 tooth.pca=prcomp(Teeth, center = TRUE, scale. = TRUE)
 tooth.pca$names=row.names(Teeth)
 summary(tooth.pca)
@@ -70,7 +70,7 @@ pca.1.2=pca[,c(1,2)]
 ```
 
 Create plot of PC1 x PC2 (the first two PCs typically capture the vast majority of the variation in shape):
-```
+```r
 g=ggbiplot(tooth.pca, obs.scale = 1, var.scale = 1, circle = TRUE) + geom_text(aes(label=tooth.pca$names),hjust=0, vjust=0, size=1.5)
 g=g+ylim(-4,4)
 g=g+xlim(-4,8)
@@ -78,7 +78,7 @@ g=g+theme_classic()
 print(g)
 ```
 
-```
+```r
 # Read nexus phylogeny
 tree=read.nexus("catfishes_tree.txt")
 # Save one copy of the tree as a phylo type
