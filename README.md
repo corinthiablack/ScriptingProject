@@ -4,6 +4,11 @@ Authors: Charlotte Benedict, Corinthia Black, Miles Horne, Matt Welc, Courtney W
 Auburn University; BIOL 7180 "Scripting for Biologists"
 
 ## Phylogenetics
+We will conduct phylogenetic analyses using MrBayes through the ASC. The following modules are required
+(follow links for detailed documentation)
+-       [MAFFT] (https://mafft.cbrc.jp/alignment/software/)
+-       [PartitionFinder] (http://www.robertlanfear.com/partitionfinder/tutorial/) ***This package is not found on the ASC. You are not required to run this analysis. The file you need is found on GitHub. 
+-       [MrBayes] (http://nbisweden.github.io/MrBayes/)
 
 ### MAFFT Alignment
 
@@ -40,7 +45,7 @@ Run my job
 
 We will conduct shape analyses using the R statistical software package. The following packages are required 
 (follow links for detailed documentation)
--	[phytools](https://cran.r-project.org/web/packages/phytools/index.html)
+-       [phytools](https://cran.r-project.org/web/packages/phytools/index.html)
 -	[devtools](https://cran.r-project.org/web/packages/devtools/index.html)
 -	[vqv/ggbiplot](https://github.com/vqv/ggbiplot) ***This package must be downloaded from github.com, 
 as it is not on the official R site.
