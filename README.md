@@ -12,13 +12,13 @@ We will conduct phylogenetic analyses using MrBayes through the ASC. The followi
 
 ### MAFFT Alignment
 
+First load the MAFFT v7.305 module: 
+
 ```#!/bin/bash```
-
-Load the MAFFT module here
-
 ```module load mafft/7.305```
-  
-This will align the files using MAFFT automatic settings and creates an output fasta file
+
+Align the files using the MAFFT automatic settings
+Create output fasta file
 
 ```mafft --auto unedited_sequences.fasta > aligned_sequences.fasta```
 
