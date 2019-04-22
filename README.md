@@ -26,7 +26,11 @@ Load unedited sequence fasta file and create new aligned output fasta file
 ```bash
 mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
 ```
-
+Chmod and Execute the file:
+```bash
+chmod +x mafft.sh
+./mafft.sh
+```
 ### PartitionFinder
 Free open source software to select best-fit partitioning schemes and models of molecular evolution for phylogenetic analysis.
 ***You are not require to run this package. Best-fit partitioning schemes and models have been added to .nex file for MrBayes. 
