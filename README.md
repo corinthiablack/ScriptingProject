@@ -21,7 +21,7 @@ module load mafft/7.305
 
 Align the files using the MAFFT automatic settings
 
-Create output fasta file
+Load unedited sequence fasta file and create new aligned output fasta file
 
 ```bash
 mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
@@ -29,23 +29,21 @@ mafft --auto unedited_sequences.fasta > aligned_sequences.fasta
 
 ### MrBayes
 
+Create new directory for MrBayes
+
 ```bash
 #!/bin/sh
-```
-
-This creates new directory and changes to it 
-
-```bash
 mkdir mb_output
 cd mb_output
 ```
 
-Load the MrBayes environment here
+Load the MrBayes environment 
 
 ```bash
 source /opt/asn/etc/asn-bash-profiles-special/modules.sh
 module load mrbayes
 ```
+Use nexus file
 
 Run my job
 
