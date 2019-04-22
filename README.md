@@ -78,7 +78,7 @@ g=g+xlim(-4,8)
 g=g+theme_classic()
 print(g)
 ```
-![PCA](https://github.com/corinthiablack/ScriptingProject/pictures/CatfishPCA.jpg "It should look a little something like this.")
+![PCA](https://github.com/corinthiablack/ScriptingProject/blob/master/pictures/CatfishPCA.jpg "It should look a little something like this.")
 
 ### Phylomorphospace
 ```r
