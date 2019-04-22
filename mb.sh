@@ -7,5 +7,5 @@ cd mb_output
 source /opt/asn/etc/asn-bash-profiles-special/modules.sh
 module load mrbayes
 # Run my job
-mb ../catfishes_practice.nex >log.txt
+mb ../catfishes_tree.nex >log.txt
 
