@@ -55,6 +55,7 @@ This file is formatted for optimization in R studio, but it should run fine
 in "standard R". 
 *what an r markdown file is
 
+### Morphospace
 Create data frame from morphological data:
 ```r
 Teeth=read.delim("ToothMeasurements.txt", sep="\t", header = TRUE, row.names = 1)
@@ -77,7 +78,9 @@ g=g+xlim(-4,8)
 g=g+theme_classic()
 print(g)
 ```
+![PCA](https://github.com/corinthiablack/ScriptingProject/pictures/CatfishPCA.jpg "It should look a little something like this.")
 
+### Phylomorphospace
 ```r
 # Read nexus phylogeny
 tree=read.nexus("catfishes_tree.txt")
