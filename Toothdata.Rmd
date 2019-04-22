@@ -16,6 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(phytools)
 
 # PCA visualization
+#library(devtools)
 #install_github("vqv/ggbiplot")
 library(ggbiplot)
 
