@@ -6,9 +6,9 @@ Auburn University; BIOL 7180 "Scripting for Biologists"
 ## Phylogenetics
 We will conduct phylogenetic analyses using MrBayes through the ASC. The following modules are required
 (follow links for detailed documentation)
--       [MAFFT] (https://mafft.cbrc.jp/alignment/software/)
--       [PartitionFinder] (http://www.robertlanfear.com/partitionfinder/tutorial/) ***This package is not found on the ASC. You are not required to run this analysis. The file you need is found on GitHub. 
--       [MrBayes] (http://nbisweden.github.io/MrBayes/)
+-	[MAFFT] (https://mafft.cbrc.jp/alignment/software/)
+-	[PartitionFinder] (http://www.robertlanfear.com/partitionfinder/tutorial/) ***This package is not found on the ASC. You are not required to run this analysis. The file you need is found on GitHub. 
+-	[MrBayes] (http://nbisweden.github.io/MrBayes/)
 
 ### MAFFT Alignment
 
